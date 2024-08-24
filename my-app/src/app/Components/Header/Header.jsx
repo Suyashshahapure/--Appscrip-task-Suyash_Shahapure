@@ -8,6 +8,9 @@ import heart from "../../Assets/images/heart.svg";
 import "./Header.css";
 
 const Header = () => {
+  // fetch("https://fakestoreapi.com/products")
+  //   .then((res) => res.json())
+  //   .then((json) => console.log(json));
   return (
     <header className="header">
       {/* first section start */}
