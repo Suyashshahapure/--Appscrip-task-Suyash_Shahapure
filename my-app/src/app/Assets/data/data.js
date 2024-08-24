@@ -1,0 +1,58 @@
+export const data = [
+    {
+      id: "1",
+      Btn: "IDEAL FOR",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Men", "Women", "Baby & Kids"],
+    },
+    {
+      id: "2",
+      Btn: "OCCASION",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Party", "Travel", "Pooja"],
+    },
+    {
+      id: "3",
+      Btn: "WORK",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Office Wear", "Formal", "Casual"],
+    },
+    {
+      id: "4",
+      Btn: "FABRIC",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Cotton", "Wool", "Silk"],
+    },
+    {
+      id: "5",
+      Btn: "SEGMENT",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Men", "Women", "Baby & Kids"],
+    },
+    {
+      id: "6",
+      Btn: "SUITABLE FOR",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Men", "Women", "Baby & Kids"],
+    },
+    {
+      id: "7",
+      Btn: "RAW MATERIAL",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Plastic", "Wood", "Fiber"],
+    },
+    {
+      id: "8",
+      Btn: "Pattern",
+      p: "All",
+      btn2: "Unselect all",
+      category: ["Classic", "New", "OldSkool"],
+    },
+  ];
