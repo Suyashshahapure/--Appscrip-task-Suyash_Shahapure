@@ -32,7 +32,7 @@ const Footer = () => {
 
             <h3>CURRENCY</h3>
             <div className="currency-section">
-              <Image src={Language} alt="Language" />
+              <Image src={Language} alt="Language selection icon" />
             </div>
             <p>
               Transaction will be completed in Euros and a currency reference is
@@ -67,17 +67,17 @@ const Footer = () => {
         <div className="footer-social">
           <h3>FOLLOW US</h3>
           <div className="social-icons">
-            <Image src={insta} alt="Instagram" />
-            <Image src={linkedin} alt="LinkedIn" />
+            <Image src={insta} alt="Instagram icon" />
+            <Image src={linkedin} alt="LinkedIn icon" />
           </div>
           <h4>mettā muse Accepts</h4>
           <div className="payment-icons">
-            <Image src={gpay} alt="Google Pay" />
-            <Image src={masterCard} alt="MasterCard" />
-            <Image src={paypal} alt="Paypal" />
-            <Image src={amex} alt="American Express" />
-            <Image src={applePay} alt="Apple Pay" />
-            <Image src={opay} alt="Opay" />
+            <Image src={gpay} alt="Google Pay icon" />
+            <Image src={masterCard} alt="MasterCard icon" />
+            <Image src={paypal} alt="Paypal icon" />
+            <Image src={amex} alt="American Express icon" />
+            <Image src={applePay} alt="Apple Pay icon" />
+            <Image src={opay} alt="Opay icon" />
           </div>
         </div>
       </div>
