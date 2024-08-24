@@ -56,8 +56,8 @@ const ProductPage = () => {
           <option value="">PRICE: LOW TO HIGH</option>
         </select>
       </div>
-      <div className="filter-product-section">
-        <div id="filter-options" className="filter-options">
+      <div className={`filter-product-section ${isFilterOpen ? 'filter-open' : ''}`}>
+        <div id="filter-options" className={`filter-options ${isFilterOpen ? 'visible' : ''}`}>
           {isFilterOpen && (
             <div className="filter-content">
               <div className="filter-option">
