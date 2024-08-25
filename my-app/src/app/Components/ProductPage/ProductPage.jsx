@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProductCard from "../ProductCard/ProductCard.jsx";
 import { data } from "../../Assets/data/data.js";
 import { API_data } from "@/app/Assets/data/Api.js";
@@ -8,10 +8,19 @@ import "./ProductPage.css";
 const ProductPage = () => {
   const [isFilterOpen, setFilterOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
+  const [productsData, setProductsData] = useState([]);
   const [likedProducts, setLikedProducts] = useState({});
 
-  // Set productsData directly from API_data
-  const productsData = API_data.slice(0, 10);
+  useEffect(() => {
+    fetch("https://api.escuelajs.co/api/v1/products")
+      .then((res) => res.json())
+      .then((data) => {
+        const slicedData = data.slice(0, 10);
+        console.log(slicedData.map((item) => item.images)); // Log image URLs
+        setProductsData(slicedData);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
 
   console.log(productsData);
 
