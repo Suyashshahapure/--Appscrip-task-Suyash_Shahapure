@@ -1,117 +1,147 @@
+/* Apply box-sizing to all elements to prevent unwanted white space */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 footer {
-    background-color: #f9f9f9;
-    padding: 20px;
-    font-family: "Simplon Norm", sans-serif;
-    color: #333;
-    
-  }
-  
-  footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: #000;
-  }
-  
-  footer p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  footer input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    width: 250px;
-  }
-  
-  footer button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  
-  footer button:hover {
-    background-color: #555;
-  }
-  
-  footer .footer-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  footer .footer-section div {
-    flex: 1;
-    min-width: 250px;
-    margin-right: 20px;
-  }
-  
-  footer .footer-section div:last-child {
-    margin-right: 0;
-  }
-  
-  footer hr {
-    border: none;
-    border-top: 1px solid #e0e0e0;
-    margin: 20px 0;
-  }
-  
-  footer .footer-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  footer .footer-links div {
-    flex: 1;
-    min-width: 200px;
-    margin-right: 20px;
-  }
-  
-  footer .footer-links div:last-child {
-    margin-right: 0;
-  }
-  
-  footer .social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  footer .payment-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  
-  footer .currency-section {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  footer .currency-section p {
-    margin-left: 5px;
-  }
-  
-  footer p {
-    font-size: 0.9rem;
-  }
-  
-  footer .copyright {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: #888;
-  }
-  
+  background-color: black;
+  padding: 20px;
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+  color: white; /* Text color */
+  width: 100%; /* Ensure footer takes full width */
+  margin: 0; /* Remove default margin */
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: white; /* Text color */
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: white; /* Text color */
+}
+
+footer input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 250px;
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white; /* Text color */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+}
+
+footer button:hover {
+  background-color: #555;
+}
+
+footer .footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+footer .footer-section div {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+}
+
+footer .footer-section div:last-child {
+  margin-right: 0;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-links div {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+footer .footer-links div:last-child {
+  margin-right: 0;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .payment-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+footer .currency-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer .currency-section p {
+  margin-left: 5px;
+  color: white; /* Text color */
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: white; /* Text color */
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: white; /* Text color */
+  font-family: "Simplon Norm"; /* Apply Simplon Norm font */
+}
+
+.first-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-div {
+  margin-bottom: 30px;
+}
+
+/* Ensure no extra margin or padding on the body */
+body {
+  margin: 0;
+  padding: 0;
+}

@@ -16,10 +16,10 @@ const Footer = () => {
     <footer>
       <div className="footer-section">
         {/* Footer Section One Start */}
-        <div>
+        <div className="first-div">
           <div className="footer-subscribe">
             <h3>BE THE FIRST TO KNOW</h3>
-            <p>Sign up for updates from metta muse.</p>
+            <p className="signup-div" >Sign up for updates from metta muse.</p>
             <div className="subscribe-input">
               <input type="text" placeholder="Enter your e-mail" />
               <button>SUBSCRIBE</button>

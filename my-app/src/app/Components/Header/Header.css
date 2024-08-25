@@ -1,98 +1,148 @@
 .header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .LOGO {
-    font-family: 'Simplon Norm';
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 43.57px;
-    letter-spacing: 1px;
-    text-align: left;
-    padding-left: 130px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure relative positioning for proper absolute positioning of child elements */
+}
+
+.headerFirstSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 10; /* Ensure this is above other elements */
+}
+
+.logoImage {
+  width: 100px; /* Adjust width if needed */
+  height: auto; /* Maintain aspect ratio */
+  padding-left: 50px;
+  z-index: 20; /* Ensure the logo is above other elements */
+}
+
+.headerSecondSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  transition: transform 0.3s ease;
+  position: relative; /* Adjust positioning to ensure it does not overlap the logo */
+}
+
+.headerThirdSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.LOGO {
+  font-family: 'Simplon Norm';
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43.57px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 130px;
+}
+
+.secondSectionItems {
+  padding: 10px;
+  font-family: 'Simplon Norm';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  font-family: 'Simplon Norm';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.DiscoverProducts {
+  font-family: 'Simplon Norm';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.headerThirdSection p {
+  font-family: 'Simplon Norm';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  height: 200px;
+  width: 700px;
+  margin: 0;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 20px;
+  z-index: 15; /* Ensure hamburger button is above other elements */
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
   .headerFirstSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    justify-content: flex-start;
   }
-  
+
   .logoImage {
-    width: 35.61px;
-    height: 35.66px;
-    padding-left: 50px;
+    padding-left: 0;
+    width: 80px; /* Adjust width for smaller screens if needed */
   }
-  
+
   .headerSecondSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #E5E5E5;
-  }
-  
-  .secondSectionItems {
-    padding: 10px;
-    font-family: 'Simplon Norm';
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1px;
-    text-align: left;
-  }
-  
-  .headerThirdSection {
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on the height of headerFirstSection */
+    left: 0;
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
+    transform: translateY(-100%);
+    z-index: 10; /* Ensure it does not cover the logo on small screens */
   }
-  
-  select {
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 0;
-    font-family: 'Simplon Norm';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19.2px;
-    letter-spacing: 1px;
-    text-align: left;
+
+  .headerSecondSection.open {
+    display: flex;
+    transform: translateY(0);
   }
-  
-  .DiscoverProducts {
-    font-family: 'Simplon Norm';
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding-bottom: 0;
+
+  .hamburger {
+    display: block;
   }
-  
-  .headerThirdSection p {
-    font-family: 'Simplon Norm';
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: center;
-    height: 200px;
-    width: 700px;
-    margin: 0;
-  }
-  
+}
